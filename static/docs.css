@@ -1,0 +1,59 @@
+@media screen and (min-width: 1201px) {
+    .container {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 901px) {
+    .container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid-flex-cell {
+        display: block;
+        width:100%;
+    }
+}
+
+.grid-flex-container {
+    margin-top:30px;
+}
+.grid-flex-cell {
+    border:none;
+    text-align:left;
+}
+.grid-flex-cell-1of4 {
+    min-width:250px;
+    margin-left:30px;
+}
+h1 {
+    font-size:32px;
+    margin-bottom:0px;
+}
+.grid-flex-cell p {
+    margin-bottom: 30px;
+}
+
+.navbar {
+    border-bottom: 1px solid #e6eaed !important;
+}
+.navbar .navbar-brand {
+    margin-left:0px;
+}
+.side-nav a {
+    color: #4d5659 !important;
+}
+
+img[alt="protected branches"] {
+    border: 1px solid #e6eaed;
+    border-radius:3px;
+    max-width:600px;
+}
+
+img[alt="pending approval"] {
+    max-width:600px;
+}
+
+img[alt="approval complete"] {
+    max-width:600px;
+}
