@@ -36,12 +36,12 @@ Toml format inspired by the [Docker project](https://github.com/docker/opensourc
 ```
 [people]
     [people.bradrydzewski]
-        Name = "Brad Rydzewski"
-        Email = "brad.rydzewski@mail.com"
-        Login = "bradrydzewski"
+        name = "Brad Rydzewski"
+        email = "brad.rydzewski@mail.com"
+        login = "bradrydzewski"
 
     [people.mattnorris]
-        Name = "Matt Norris"
-        Email = "matt.norris@mail.com"
-        Login = "mattnorris"
+        name = "Matt Norris"
+        email = "matt.norris@mail.com"
+        login = "mattnorris"
 ```
