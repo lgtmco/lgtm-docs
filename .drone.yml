@@ -7,3 +7,10 @@ build:
     - tar xvf /tmp/hugo_$HUGO.tar.gz -C /tmp/
     - mv /tmp/hugo_$HUGO/hugo_$HUGO /usr/bin/hugo
     - hugo
+
+deploy:
+  rsync:
+    source: public/
+    target: /var/www/html/
+    recursive: true
+    delete: true
