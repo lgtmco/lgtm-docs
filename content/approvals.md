@@ -10,4 +10,4 @@ In order to approve a pull request a maintainer should add a comment that
 includes **LGTM**, which stands for *looks good to me*. When **two approvals**
 are received the branch is unlocked and can be merged.
 
-![approval complete](/images/approval_complete.png)
+![approval complete](/docs/images/approval_complete.png)

@@ -11,4 +11,4 @@ pull requests that have not received approval from your maintainers.
 
 Navigate to your repository settings in GitHub to enable protected branches:
 
-![protected branches](/images/protected_branches.png)
+![protected branches](/docs/images/protected_branches.png)
