@@ -11,7 +11,7 @@ build:
 deploy:
   rsync:
     source: public/
-    target: /var/www/html/
+    target: /var/www/docs
     recursive: true
     delete: true
     host: lgtm.co
