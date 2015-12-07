@@ -6,9 +6,10 @@ weight = 2
 menu = "main"
 +++
 
-Use this service with GitHub protected branches in order to prevent merging
-pull requests that have not received approval from your maintainers.
+This service **automatically** configures GitHub protected branches in order to
+prevent merging pull requests that have not received approval from your
+maintainers.
 
-Navigate to your repository settings in GitHub to enable protected branches:
+Navigate to your repository settings to further customize protected branches:
 
 ![protected branches](/docs/images/protected_branches.png)
