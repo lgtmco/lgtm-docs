@@ -30,6 +30,10 @@ h1 {
     font-size:32px;
     margin-bottom:0px;
 }
+h2 {
+    font-size:24px;
+    margin:60px 0px 30px 0px;
+}
 .grid-flex-cell p {
     margin-bottom: 30px;
 }
@@ -56,4 +60,9 @@ img[alt="pending approval"] {
 
 img[alt="approval complete"] {
     max-width:600px;
+}
+
+pre code {
+    font-family: "Roboto Mono";
+    font-size: 13px;
 }

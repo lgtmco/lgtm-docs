@@ -31,9 +31,18 @@ Brad Rydzewski <brad.rydzewski@mail.com> (@bradrydzewski)
 Matthew Norris <matthew.norris@mail.com> (@mattnorris)
 ```
 
-Toml format inspired by the [Docker project](https://github.com/docker/opensource/blob/master/MAINTAINERS):
+## Advanced
+
+You may also use a more advanced toml format inspired by the [Docker project](https://github.com/docker/opensource/blob/master/MAINTAINERS):
 
 ```
+[org]
+    [org.core]
+        people = [
+            "bradrydzewski",
+            "mattnorris",
+        ]
+
 [people]
     [people.bradrydzewski]
         name = "Brad Rydzewski"
@@ -45,3 +54,43 @@ Toml format inspired by the [Docker project](https://github.com/docker/opensourc
         email = "matt.norris@mail.com"
         login = "mattnorris"
 ```
+
+The individuals listed in the `core` organization represent the individuals that may approve pull requests for the current repository. You can also specify sub-organizations for other repositories:
+
+
+```
+[org]
+    [org.core]
+        people = [
+            "bradrydzewski",
+            "mattnorris",
+        ]
+
+    [org.python]
+        people = [ "mattnorris" ]    
+```
+
+The above example includes a sub-organization that is responsible for maintaining our Python projects. We can use the command-line tools to generate a new `MAINTAINERS` file for our Python sub-organization:
+
+```
+$ lgtm octocat/hello-world python
+
+
+[org]
+    [org.core]
+        people = [ "mattnorris" ]
+
+[people]
+    [people.mattnorris]
+        name = "Matt Norris"
+        email = "matt.norris@mail.com"
+        login = "mattnorris"   
+```
+
+We can even push this file to another repository:
+
+```
+$ lgtm get octocat/hello-world python | lgtm push octocat/Spoon-Knife
+```
+
+This is useful when you want to have a master `MAINTAINERS` file that describes multiple repositories. See the command line documentation for more examples.
