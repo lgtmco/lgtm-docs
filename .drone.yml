@@ -15,3 +15,4 @@ deploy:
     recursive: true
     delete: true
     host: lgtm.co
+
