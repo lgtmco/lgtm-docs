@@ -83,56 +83,7 @@ Push a central `MAINTAINERS` file on your local machine to multiple repositories
 
 ```
 $ export GITHUB_TOKEN=f0e4c2f76c58916ec258f246851bea
-$ lgtm ls | grep octocat/ | xargs -I{} lgtm push {} path/to/central/MAINTAINERS
+
+$ lgtm get octocat/hello-world > /tmp/MAINTAINERS
+$ lgtm ls --exclude=octocat/hello-world | xargs -I{} lgtm push {} /tmp/MAINTAINERS
 ```
-
-
-
-<!--
-
-```toml
-$ lgtm get octocat/helloworld
-
-
-[people]
-  [people.bradrydzewski]
-    name = "Brad Rydzewski"
-    login = "bradrydzewski"
-  [people.mattnorris]
-    name = "Matt Norris"
-    login = "mattnorris"
-  [people.thenatefisher]
-    name = "Nate Fisher"
-    login = "thenatefisher"
-
-[org]
-  [org.plugins]
-    people = [
-      "bradrydzewski",
-      "mattnorris",
-    ]
-```
-
-This returns a subset of the team members that are part of the `plugins`
-organization, and are now listed in the `core` organization:
-
-```
-$ lgtm get octocat/helloworld plugins
-
-
-[people]
-  [people.bradrydzewski]
-    name = "Brad Rydzewski"
-    login = "bradrydzewski"
-  [people.mattnorris]
-    name = "Matt Norris"
-    login = "mattnorris"
-
-[org]
-  [org.core]
-    people = [
-      "bradrydzewski",
-      "mattnorris",
-    ]
-```
--->
