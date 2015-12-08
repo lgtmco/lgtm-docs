@@ -16,7 +16,7 @@ Create a file to hold your configuration parameters in `KEY=VALUE` format. Pleas
 note that these variables should not be quoted:
 
 ```
-GITHUB_URL=https://github.hooli.com
+GITHUB_URL=https://github.mycompany.com
 GITHUB_SCOPE=user:email,read:org,repo
 GITHUB_CLIENT=
 GITHUB_SECRET=
@@ -62,7 +62,7 @@ installations.
 
 Register your application with GitHub (or GitHub Enterprise) to create your client
 id and secret. It is very import that the redirect URL matches your http(s) scheme
-and hostname exactly with `/authorize` as the path.
+and hostname exactly with `/login` as the path.
 
 Please use this screenshot for reference:
 
@@ -87,7 +87,7 @@ location / {
 This is an example caddy server configuration:
 
 ```nginx
-lgtm.hooli.com {
+lgtm.mycomopany.com {
         proxy / localhost:8000 {
                 proxy_header X-Forwarded-Proto {scheme}
                 proxy_header X-Forwarded-For {host}
