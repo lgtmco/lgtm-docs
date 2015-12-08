@@ -13,9 +13,11 @@ sudo docker pull lgtm/lgtm
 ```
 
 Create a file to hold your configuration parameters in `KEY=VALUE` format. Please
-note that these variables should not be quoted.
+note that these variables should not be quoted:
 
 ```
+GITHUB_URL=https://github.hooli.com
+GITHUB_SCOPE=user:email,read:org,repo
 GITHUB_CLIENT=
 GITHUB_SECRET=
 ```
@@ -41,6 +43,31 @@ be mounted on the host machine as a volume to avoid data loss.
 --volume /var/lib/lgtm:/var/lib/lgtm
 ```
 
+## Configuration
+
+This is a full list of configuration options. Please note that many of these
+options use default configuration value that should work for the majorify of
+installations.
+
+* `DEBUG=false` runs the server in debug mode with more verbose logs
+* `CACHE_TTL=15m` the cache duration for certain github data
+* `GITHUB_URL` github server url when using GitHub Enterprise
+* `GITHUB_CLIENT` github oauth client id
+* `GITHUB_SECRET` github oauth client secret
+* `GITHUB_SCOPE` github oauth scopes
+* `DATABASE_DRIVER=sqlite` the database driver
+* `DATABASE_DATASOURCE` the database connection string
+
+## Registration
+
+Register your application with GitHub (or GitHub Enterprise) to create your client
+id and secret. It is very import that the redirect URL matches your http(s) scheme
+and hostname exactly with `/authorize` as the path.
+
+Please use this screenshot for reference:
+
+![registration](/docs/images/app_registration.png)
+
 ## Reverse Proxies
 
 If you are running behind a reverse proxy please ensure the `X-Forwarded-For`
@@ -60,7 +87,7 @@ location / {
 This is an example caddy server configuration:
 
 ```nginx
-lgtm.mycomany.com {
+lgtm.hooli.com {
         proxy / localhost:8000 {
                 proxy_header X-Forwarded-Proto {scheme}
                 proxy_header X-Forwarded-For {host}
@@ -70,4 +97,4 @@ lgtm.mycomany.com {
 ```
 
 Note that when running behind a reverse proxy you should change the recommended
-port mappings from `--publish=80:8000` to something like ``--publish=8000:8000`.
+port mappings from `--publish=80:8000` to something like `--publish=8000:8000`.

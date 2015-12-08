@@ -48,17 +48,15 @@ h2 {
     color: #4d5659 !important;
 }
 
+img[alt="github registration"],
 img[alt="protected branches"] {
     border: 1px solid #e6eaed;
     border-radius:3px;
     max-width:600px;
 }
 
+img[alt="approval complete"],
 img[alt="pending approval"] {
-    max-width:600px;
-}
-
-img[alt="approval complete"] {
     max-width:600px;
 }
 
