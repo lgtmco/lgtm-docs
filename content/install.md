@@ -66,7 +66,7 @@ and hostname exactly with `/authorize` as the path.
 
 Please use this screenshot for reference:
 
-![registration](/docs/images/app_registration.png)
+![github registration](/docs/images/app_registration.png)
 
 ## Reverse Proxies
 
