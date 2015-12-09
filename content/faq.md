@@ -50,5 +50,5 @@ for auditing purposes.
 
 ![hook success](/docs/images/hook_success.png)
 
-Note that you can always click the re-deliver button to re-deliver a hook in
-the event of a network related failure.
+If the payload indicates the pull request was approved, and this is not reflected
+in the status you can click the re-deliver button to re-deliver the payload.
