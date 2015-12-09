@@ -21,7 +21,7 @@ approval process. Below is a list of available configuration parameters:
 * `pattern` - regular expression used to match approvals, defaults to `(?i)LGTM`
 
 Pattern matching is performed using Go's regular expressions package. We
-recommended testing custom regular expression in the [Go playground](http://play.golang.org/p/nQx_jGsLHz).
+recommended testing custom regular expressions in the [Go playground](http://play.golang.org/p/nQx_jGsLHz).
 For convenience we've included some common examples below.
 
 ## Examples
@@ -60,5 +60,5 @@ pattern = "(?i):shipit:"
 Example pattern that combines multiple of the above patterns:
 
 ```
-pattern = "(?i):shipit:|(?i):\\+1:|(?i)LGTM"
+pattern = "(?i):shipit:|:\\+1:|LGTM"
 ```
