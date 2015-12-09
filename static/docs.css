@@ -83,3 +83,15 @@ section h1 {
     margin-top: 30px;
     font-size:28px;
 }
+blockquote {
+    background-color: #e3f8ff;
+    color: #00b0e9;
+}
+blockquote p {
+    padding:30px;
+    font-style: normal;
+}
+blockquote ~ h1 {
+    border-top:0px;
+    margin-top:-20px;
+}

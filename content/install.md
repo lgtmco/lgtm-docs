@@ -7,6 +7,11 @@ menu = "main"
 toc = true
 +++
 
+> Please note the self-hosted version is completely free for small teams and
+> non-profits. There may be a very modest annual licensing fee for large
+> teams and enterprises in the future. Please contact
+> [@bradrydzewski](mailto:brad@drone.io) if you have any questions or concerns.
+
 # Installation
 
 Get started by downloading the image from DockerHub:
