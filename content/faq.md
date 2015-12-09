@@ -32,3 +32,23 @@ own instance. See the [the documentation](../install).
 # Can I install on my own server?
 
 Yes, we have a Docker image available. See the [the documentation](../install).
+
+# Why isn't this thing working?!
+
+Verify that hooks are being sent correctly. You can see an audit log of
+all hooks in the **Webhooks & Services** section or your repository settings.
+
+Verify the message is being processed successful. An unsuccessful message
+will be flagged accordingly in GitHub. Error messages from the service are written
+to the response body.
+
+![hook error](/docs/images/hook_error.png)
+
+Verify the response from a successful hook. The approval settings, approval status,
+and list of individuals that approved the pull request are included in the payload
+for auditing purposes.
+
+![hook success](/docs/images/hook_success.png)
+
+Note that you can always click the re-deliver button to re-deliver a hook in
+the event of a network related failure.

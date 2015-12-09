@@ -48,6 +48,8 @@ h2 {
     color: #4d5659 !important;
 }
 
+img[alt="hook success"],
+img[alt="hook error"],
 img[alt="github registration"],
 img[alt="protected branches"] {
     border: 1px solid #e6eaed;
