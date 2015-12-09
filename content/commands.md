@@ -4,7 +4,10 @@ draft = false
 title = "Command Line Tools"
 weight = 4
 menu = "main"
+toc = true
 +++
+
+# Installation
 
 Use the command line tools to manage `MAINTAINERS` files from the terminal. This is especially useful if you would like to manage `MAINTAINERS` files in batch.
 
@@ -22,7 +25,7 @@ $ curl -L https://github.com/lgtmco/lgtm-cli/releases/download/v1.0.0/lgtm_linux
 $ sudo install -t /usr/local/bin drone
 ```
 
-## Authenticate
+# Authentication
 
 You will need to provide the command line client with an access token.
 
@@ -37,7 +40,7 @@ $ export GITHUB_TOKEN=f0e4c2f76c58916ec258f246851bea
 $ export LGTM_TOKEN=$(lgtm token $GITHUB_TOKEN)
 ```
 
-## Basic Usage
+# Basic Usage
 
 Activate or deactivate a repository:
 
@@ -64,7 +67,7 @@ Get an active repository's `MAINTAINERS` file:
 $ lgtm get octocat/hello-world
 ```
 
-## Batch Usage
+# Batch Usage
 
 Activate all repositories for an organization:
 

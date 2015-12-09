@@ -4,7 +4,10 @@ draft = false
 title = "Self Hosting"
 weight = 5
 menu = "main"
+toc = true
 +++
+
+# Installation
 
 Get started by downloading the image from DockerHub:
 
@@ -12,8 +15,8 @@ Get started by downloading the image from DockerHub:
 sudo docker pull lgtm/lgtm
 ```
 
-Create a file to hold your configuration parameters in `KEY=VALUE` format. Please
-note that these variables should not be quoted:
+Create a `/etc/lgtm/lgtmrc` file to hold your configuration parameters in
+`KEY=VALUE` format. Please note that these variables should not be quoted:
 
 ```
 GITHUB_URL=https://github.mycompany.com
@@ -43,7 +46,7 @@ be mounted on the host machine as a volume to avoid data loss.
 --volume /var/lib/lgtm:/var/lib/lgtm
 ```
 
-## Configuration
+# Configuration
 
 This is a full list of configuration options. Please note that many of these
 options use default configuration value that should work for the majorify of
@@ -58,7 +61,7 @@ installations.
 * `DATABASE_DRIVER=sqlite` the database driver
 * `DATABASE_DATASOURCE` the database connection string
 
-## Registration
+# Registration
 
 Register your application with GitHub (or GitHub Enterprise) to create your client
 id and secret. It is very import that the redirect URL matches your http(s) scheme
@@ -68,7 +71,7 @@ Please use this screenshot for reference:
 
 ![github registration](/docs/images/app_registration.png)
 
-## Reverse Proxies
+# Reverse Proxies
 
 If you are running behind a reverse proxy please ensure the `X-Forwarded-For`
 and `X-Forwarded-Proto` variables are configured.

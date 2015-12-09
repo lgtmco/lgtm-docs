@@ -4,7 +4,6 @@ draft = false
 title = "FAQ"
 weight = 6
 menu = "main"
-class = "faq"
 toc = true
 +++
 
