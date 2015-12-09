@@ -11,3 +11,50 @@ includes **LGTM**, which stands for *looks good to me*. When **two approvals**
 are received the branch is unlocked and can be merged.
 
 ![approval complete](/docs/images/approval_complete.png)
+
+## Customize
+
+Place an `.lgtm` file in the root of your repository to customize your project's
+approval process. Below is a list of available configuration parameters:
+
+* `approvals` - number of required approvals, defaults to 2
+* `pattern` - regular expression used to match approvals, defaults to `(?i)LGTM`
+
+## Examples
+
+Example `.lgtm` configuration file:
+
+```
+approvals = 1
+pattern = "(?i)LGTM"
+```
+
+Example pattern to match `LGTM` in a comment:
+
+```
+pattern = "(?i)LGTM"
+```
+
+Example pattern to match `+1` in a comment:
+
+```
+pattern = "(?i)\\+1"
+```
+
+Example pattern to match `:+1:` emoji in a comment:
+
+```
+pattern = "(?i):\\+1:"
+```
+
+Example pattern to match `:shipit:` in a comment:
+
+```
+pattern = "(?i):shipit:"
+```
+
+Example pattern that combines multiple of the above patterns:
+
+```
+pattern = "(?i):shipit:|(?i):\\+1:|(?i)LGTM"
+```

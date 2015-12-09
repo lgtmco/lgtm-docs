@@ -9,7 +9,6 @@ menu = "main"
 The list of approvers is stored in a `MAINTAINERS` text file in the root
 of your repository. There are multiple supported file formats to choose from.
 
-
 Username, separated by newline:
 
 ```
@@ -31,18 +30,9 @@ Brad Rydzewski <brad.rydzewski@mail.com> (@bradrydzewski)
 Matthew Norris <matthew.norris@mail.com> (@mattnorris)
 ```
 
-## Advanced
-
-You may also use a more advanced toml format inspired by the [Docker project](https://github.com/docker/opensource/blob/master/MAINTAINERS):
+Toml format inspired by the [Docker project](https://github.com/docker/opensource/blob/master/MAINTAINERS):
 
 ```
-[org]
-    [org.core]
-        people = [
-            "bradrydzewski",
-            "mattnorris",
-        ]
-
 [people]
     [people.bradrydzewski]
         name = "Brad Rydzewski"
@@ -55,6 +45,8 @@ You may also use a more advanced toml format inspired by the [Docker project](ht
         login = "mattnorris"
 ```
 
+
+<!--
 The individuals listed in the `core` organization represent the individuals that may approve pull requests for the current repository. You can also specify sub-organizations for other repositories:
 
 
@@ -94,3 +86,4 @@ $ lgtm get octocat/hello-world python | lgtm push octocat/Spoon-Knife
 ```
 
 This is useful when you want to have a master `MAINTAINERS` file that describes multiple repositories. See the command line documentation for more examples.
+-->
