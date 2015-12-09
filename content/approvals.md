@@ -20,6 +20,10 @@ approval process. Below is a list of available configuration parameters:
 * `approvals` - number of required approvals, defaults to 2
 * `pattern` - regular expression used to match approvals, defaults to `(?i)LGTM`
 
+Pattern matching is performed using Go's regular expressions package. We
+recommended testing custom regular expression in the [Go playground](http://play.golang.org/p/nQx_jGsLHz).
+For convenience we've included some common examples below.
+
 ## Examples
 
 Example `.lgtm` configuration file:

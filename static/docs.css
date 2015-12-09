@@ -93,6 +93,12 @@ blockquote p {
     padding:30px;
     font-style: normal;
 }
+blockquote a {
+    color: #008dba;
+}
+blockquote a:hover {
+    text-decoration: underline;
+}
 blockquote ~ h1 {
     border-top:0px;
     margin-top:-20px;
