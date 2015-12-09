@@ -14,7 +14,9 @@ Here are some tips for troubleshooting:
 
 * Is your GitHub repository public?
 * Do you have Admin access to the repository?
+* Did you grant access to your GitHub organization?
 * Did you recently create the repository? There may be up to a 15 minute delay due to internal caching.
+* Does your organization restrict integrations? [Learn more](https://github.com/blog/1941-organization-approved-applications).
 
 # Can I use with private repositories?
 
