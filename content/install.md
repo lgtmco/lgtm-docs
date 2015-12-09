@@ -12,6 +12,12 @@ toc = true
 > teams and enterprises in the future. Please contact
 > [@bradrydzewski](mailto:brad@drone.io) if you have any questions or concerns.
 
+# Requirements
+
+LGTM ships as a single binary file inside a minimalist 20 MB Docker image.
+Docker is the only dependency. If you are planning on integrating
+with GitHub Enterprise it requires version 2.4 or higher.
+
 # Installation
 
 Get started by downloading the image from DockerHub:
