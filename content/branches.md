@@ -6,6 +6,9 @@ weight = 2
 menu = "main"
 +++
 
+> If you are using the self-hosted version with GitHub Enterprise you will
+need to manually configure the protected branch.
+
 This service **automatically** configures GitHub protected branches in order to
 prevent merging pull requests that have not received approval from your
 maintainers.
