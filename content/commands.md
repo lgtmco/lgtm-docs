@@ -1,8 +1,8 @@
 +++
 date = "2015-12-05T16:00:21-08:00"
 draft = false
-title = "Command Line Tools"
-weight = 4
+title = "Command Line"
+weight = 5
 menu = "main"
 toc = true
 +++

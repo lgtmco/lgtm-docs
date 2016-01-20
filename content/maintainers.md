@@ -1,8 +1,8 @@
 +++
 date = "2015-12-05T16:00:21-08:00"
 draft = false
-title = "Setup Approvers"
-weight = 1
+title = "Maintainers"
+weight = 2
 menu = "main"
 +++
 
@@ -44,6 +44,11 @@ Toml format inspired by the [Docker project](https://github.com/docker/opensourc
         email = "matt.norris@mail.com"
         login = "mattnorris"
 ```
+
+You may prefer to maintain a single list of maintainers across all repositories in your organization. When no maintainers file is found the system will fallback to the maintainers team in your organization:
+
+![maintainers team](/docs/images/maintainers_team.png)
+
 
 
 <!--

@@ -7,11 +7,6 @@ menu = "main"
 toc = true
 +++
 
-> Please note the self-hosted version is completely free for small teams and
-> non-profits. There may be a very modest annual licensing fee for large
-> teams and enterprises in the future. Please contact
-> [@bradrydzewski](mailto:brad@drone.io) if you have any questions or concerns.
-
 # Requirements
 
 LGTM ships as a single binary file inside a minimalist 20 MB Docker image.
@@ -112,3 +107,7 @@ lgtm.mycomopany.com {
 
 Note that when running behind a reverse proxy you should change the recommended
 port mappings from `--publish=80:8000` to something like `--publish=8000:8000`.
+
+# Licensing
+
+This product is free for small teams and non-profits, however, we will require a modest licensing fee for on-premise enterprise use in the near future. Pricing to be published soon.
