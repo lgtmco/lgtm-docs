@@ -22,7 +22,7 @@ Install on Linux:
 
 ```
 $ curl -L https://github.com/lgtmco/lgtm-cli/releases/download/v1.0.0/lgtm_linux_amd64.tar.gz | tar zx
-$ sudo install -t /usr/local/bin drone
+$ sudo install -t /usr/local/bin lgtm
 ```
 
 # Authentication
