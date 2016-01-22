@@ -11,7 +11,7 @@ toc = true
 
 Get started by logging in to [lgtm.co](https://lgtm.co) (or by [installing](../install) and setting up your own lgtm instance) and enabling your repositories via a simple on / off switch.
 
-When you enable your repository it is automatically configured to use [protected branches](https://github.com/blog/2051-protected-branches-and-required-status-checks). Protected branches prevent pull requests from being merged until required status checks are passing. LGTM will configure itself as a required status check.
+When you enable your repository it is automatically configured to use [protected branches](https://github.com/blog/2051-protected-branches-and-required-status-checks). Protected branches prevent pull requests from being merged until required status checks are passing. LGTM will register itself as a required status check.
 
 # Approvers
 

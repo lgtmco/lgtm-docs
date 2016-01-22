@@ -61,6 +61,6 @@ Please also note that when protected branches prevent you from merging a pull re
 
 # This thing is busted!
 
-Please be sure you have read the documentation, including this FAQ, and fully understand how GitHub [protected branches](https://github.com/blog/2051-protected-branches-and-required-status-checks) work. Nearly all bug reports could have been resolved by reading the documentation. If you are still experiencing issues please [contact support](../support) and we'll be happy to help!
+Please be sure you have read the documentation, including this FAQ, and fully understand how GitHub [protected branches](https://github.com/blog/2051-protected-branches-and-required-status-checks) work. If you are still experiencing issues please [contact support](../support) and we'll be happy to help!
 
 In the event of an outage we will post updates to our [status page](https://status.lgtm.co).
