@@ -13,6 +13,7 @@ Username, separated by newline:
 
 ```
 bradrydzewski
+lindaortega
 matthewnorris
 ```
 
@@ -20,6 +21,7 @@ Username and email address, separated by newline:
 
 ```
 bradrydzewski <brad.rydzewski@mail.com>
+lindaortega <linka.ortega@mail.com>
 matthewnorris <matthew.norris@mail.com>
 ```
 
@@ -27,6 +29,7 @@ FullName, email address and username, separated by newline:
 
 ```
 Brad Rydzewski <brad.rydzewski@mail.com> (@bradrydzewski)
+Linda Ortega <linda.ortega@mail.com> (@lindaortega)
 Matthew Norris <matthew.norris@mail.com> (@mattnorris)
 ```
 
@@ -38,6 +41,11 @@ Toml format inspired by the [Docker project](https://github.com/docker/opensourc
         name = "Brad Rydzewski"
         email = "brad.rydzewski@mail.com"
         login = "bradrydzewski"
+
+    [people.bradrydzewski]
+        name = "Linda Ortega"
+        email = "linda.ortega@mail.com"
+        login = "lindaortega"
 
     [people.mattnorris]
         name = "Matt Norris"
