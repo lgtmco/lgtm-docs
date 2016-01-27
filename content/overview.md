@@ -22,6 +22,8 @@ bradrydzewski <brad.rydzewski@mail.com>
 matthewnorris <matthew.norris@mail.com>
 ```
 
+**Please note** that LGTM pulls the MAINTAINERS file from your repository default branch (typically master). Changes to the MAINTAINERS file are not recognized until present in the default branch. Changes to the MAINTAINERS file in a pull request are therefore not recognized until merged.
+
 # Approvals
 
 Pull requests are locked and cannot be merged until the minimum number of approvals are received (two, by default). Project maintainers can indicate their approval by commenting on the pull request and including LGTM, looks good to me, in their approval text.
