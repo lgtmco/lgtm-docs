@@ -108,6 +108,3 @@ lgtm.mycomopany.com {
 Note that when running behind a reverse proxy you should change the recommended
 port mappings from `--publish=80:8000` to something like `--publish=8000:8000`.
 
-# Licensing
-
-This product is free for small teams and non-profits, however, we will require a modest licensing fee for on-premise enterprise use in the near future. Pricing to be published soon.
