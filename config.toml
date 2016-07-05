@@ -1,4 +1,4 @@
-baseurl = "http://docs.lgtm.co/docs/"
+baseurl = "http://lgtm.co/docs/"
 languageCode = "en-us"
 title = "LGTM"
 theme = "default"
