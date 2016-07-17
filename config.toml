@@ -1,7 +1,8 @@
-baseurl = "http://docs.lgtm.co/docs/"
+baseurl = "/docs/"
 languageCode = "en-us"
 title = "LGTM"
 theme = "default"
+publishdir = "public/docs"
 
 [params]
 	description = "User documentation for lgtm.co"
