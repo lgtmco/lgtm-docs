@@ -10,6 +10,7 @@ Place an `.lgtm` file in the root of your repository to customize your project's
 
 * `approvals` number of required approvals, defaults to 2
 * `pattern` regular expression used to match approvals, defaults to `(?i)LGTM`
+* `self_approval_off = true` prevents an author from approver their own commit
 
 # Examples
 
