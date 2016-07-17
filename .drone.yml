@@ -1,18 +1,13 @@
-build:
-  image: golang:1.5
-  environment:
-    - HUGO=0.15_linux_amd64
-  commands:
-    - curl -L -o /tmp/hugo_$HUGO.tar.gz https://github.com/spf13/hugo/releases/download/v0.15/hugo_$HUGO.tar.gz
-    - tar xvf /tmp/hugo_$HUGO.tar.gz -C /tmp/
-    - mv /tmp/hugo_$HUGO/hugo_$HUGO /usr/bin/hugo
-    - hugo
+pipeline:
+  build:
+    image: jojomi/hugo
+    commands: hugo
 
-deploy:
-  rsync:
-    source: public/
-    target: /var/www/docs
-    recursive: true
-    delete: true
-    host: lgtm.co
+  docker:
+    image: docker
+    repo: lgtm/docs
+    tag: [1.0.0, latest]
+    when:
+      branch: master
+      event: push
 
